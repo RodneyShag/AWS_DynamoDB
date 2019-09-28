@@ -35,12 +35,14 @@ We can create a many-to-many relationship using 2 one-to-many tables. We rip out
 
 - __(SQL) What is 1NF, 2NF, 3NF normal form?__ (entire video)
 
-1NF
+#### 1NF
+
 - Unique primary keys.
 - Cannot have duplicate primary key values.
 - No attribute can contain more than 1 piece of information (that is, can't have a many-to-many relationship).
 
-2NF
+#### 2NF
+
 - Prerequisite of having data in 1NF.
 - If we have a Primary Key + Composite key, each attribute in the table should depend on both of these keys. Otherwise we split up the table into more tables
 
@@ -50,9 +52,11 @@ The above table can be split up into 3 tables:
 
 ![1NF to 2NF Fixed](./images/1NFto2NFfixed.png)
 
-3NF
+#### 3NF
+
 - Values of attributes should not depend on other non-key attributes
 
+#### Normalization Theory
 
 - __Is database normalization required for NoSQL databases?__ - (0:50) Not required for NoSQL databases.
 - __Why do we normalize data?__ - (16:13)
