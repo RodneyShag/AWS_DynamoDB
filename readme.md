@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/dynamoDB_logo.png">
+    <a href="https://www.hackerrank.com/RodneyShag"><img src="images/dynamoDB_logo.png"></a>
     <br><br>Repo is based on 2016 course titled <a href="https://acloud.guru/learn/aws-dynamodb">AWS DynamoDB - From Beginner to Pro</a>
 </p>
 
