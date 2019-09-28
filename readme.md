@@ -1,9 +1,10 @@
 <p align="center">
     <img src="images/dynamoDB_logo.png">
+    <br><br>Repo is based on 2016 course titled [AWS DynamoDB - From Beginner to Pro](https://acloud.guru/learn/aws-dynamodb)
 </p>
 
 
-This repo is based on the 2016 course by "A Cloud Guru" titled: [AWS DynamoDB - From Beginner to Pro](https://acloud.guru/learn/aws-dynamodb)
+
 
 # Chapter 2 - Database Fundamentals
 
