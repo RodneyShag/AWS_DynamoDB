@@ -3,16 +3,13 @@
 </p>
 
 
-# Intended Learning Strategy
-
-This repo is a concise summary and replacement of the 19-hour [AWS DynamoDB - From Beginner to Pro](https://acloud.guru/learn/aws-dynamodb) tutorial, provided by "A Cloud Guru" in 2016.
-
-Read this repo linearly from top to bottom. You do not need to access the above course to learn DynamoDB. However, the course link is provided just in case you need more information about a topic.
+This repo is a concise summary and _replacement_ of the [AWS DynamoDB - From Beginner to Pro](https://acloud.guru/learn/aws-dynamodb) tutorial. Using the hyperlinks below is optional.
 
 
 # Chapter 2 - Database Fundamentals
 
 ## Database Fundamentals - Part 1
+
 - __What's a "Candidate Key"? (in SQL)__ - (4:00) any columns which can uniquely identify a row. Cannot have null or duplicate values.
 - __What's a "Primary Key"? (in SQL)__ - (5:00) one candidate key, selected to provide unique identification of every row in the table.
 - __What's a "Foreign Key"? (in SQL)__ - (5:30) maps to a primary key in another table. Uniquely identifies a row (Primary key value) in another table. Foreign key doesn't need to be unique in the table it's in.
