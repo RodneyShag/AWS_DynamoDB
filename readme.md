@@ -1,12 +1,11 @@
 <p align="center">
     <a href="https://acloud.guru/learn/aws-dynamodb"><img src="images/dynamoDB_logo.png"></a>
-    <br><br>Repo is based on 2016 course titled <a href="https://acloud.guru/learn/aws-dynamodb">AWS DynamoDB - From Beginner to Pro</a>
 </p>
 
 
 # Intended Learning Strategy
 
-This repo is a concise summary and replacement of the 19-hour [DynamoDB tutorial by 'A Cloud Guru'](https://acloud.guru/learn/aws-dynamodb) tutorial.
+This repo is a concise summary and replacement of the 19-hour 2016 tutorial titled [AWS DynamoDB - From Beginner to Pro](https://acloud.guru/learn/aws-dynamodb) by "A Cloud Guru".
 
 Read this repo linearly from top to bottom. You do not need to access the above course to learn DynamoDB. However, the course link is provided just in case you need more information about a topic.
 
