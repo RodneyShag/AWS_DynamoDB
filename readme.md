@@ -4,6 +4,11 @@
 </p>
 
 
+# Intended Learning Strategy
+
+This repo is a concise summary and replacement of the 19-hour [DynamoDB tutorial by 'A Cloud Guru'](https://acloud.guru/learn/aws-dynamodb) tutorial.
+
+Read this repo linearly from top to bottom. You do not need to access the above course to learn DynamoDB. However, the course link is provided just in case you need more information about a topic.
 
 
 # Chapter 2 - Database Fundamentals
