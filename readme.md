@@ -187,7 +187,7 @@ The above table can be split up into 3 tables:
 - __When writing, how can you read without consuming RCU?__ - (16:10 - 20:00) Use `Update-item` with `ReturnValues` to return the new updated value _without_ consuming RCU.
 
 
-# Advanced DynamoDB
+# Chapter 4 - Advanced DynamoDB
 
 ## Partitions Deep-Dive - Part 1
 
