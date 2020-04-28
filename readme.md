@@ -363,3 +363,42 @@ The above table can be split up into 3 tables:
 - __What is Hadoop?__ - (1:30) A framework that allows the storage and processing of very large sets of data.
 - __What is EMR?__ - (1:50) Elastic Map Reduce. AWS's implementation of Hadoop
 - __What is HIVE?__ - (2:10) Data warehousing and analytics layer built onto Hadoop (and thus EMR). Lets you use  relational style operations and can operate on external data sets, (DynamoDB, s3, etc.). HIVE is the SQL interface built into Hadoop/EMR.
+
+
+# Notes From [AWS Certified Developer - Associate 2020](https://learn.acloud.guru/course/aws-certified-developer-associate/dashboard)
+
+Some additional knowledge that was not in the above 19-hour DynamoDB course.
+
+## DynamoDB On-Demand Capacity
+
+- __Does DynamoDB have on-demand pricing?__ (0:00) Yes. It's for reading, writing, and storing data.
+- __What kind of stack is this suited for?__ (1:38) Serverless, since these stacks are typically a pay-per-use pricing model.
+- __Which pricing model is better, on-demand capacity or provisioned capacity (in scenarios below)?__ (1:38)
+  - __If you have known workloads, where you can forecast read/write capacity units?__ Use provisioned capacity
+  - __If application traffic is consistent or increases gradually?__ Use provisioned capacity
+  - __If application traffic has spiky, short lived peaks?__ Use on-demand capacity
+
+## DynamoDB Accelerator (DAX)
+
+- __What is DynamoDB Accelerator (or DAX)?__ (0:10) It's an in-memory cache for DynamoDB. Delivers up to a 10x _read_ performance improvement.
+- __How does DAX work?__ - (1:35) DAX is a write-through caching service, meaning data is written to the cache as well as the back end store at the same time. DynamoDB API calls are pointed to the DAX cluster.
+- __Is DAX good for DynamoDB tables that are write-heavy?__ (3:18) No. DAX does not help with _write_ operations. DAX only helps with "eventually consistent" _read_ operations.
+- __What's an alternative to DAX?__ (Next video) Elasticache.
+
+## Elasticache
+
+- __What is difference between "lazy loading" and "write-through" caching strategies?__ (3:14)
+  - Lazy loading - only loads data into the cache when it's needed
+  - Write-Through - Same as what DAX does (see above)
+- __What is 1 advantage of lazy loading?__ (3:45) avoids filling up cache with useless data.
+- __What are 2 disadvantages of lazy loading?__
+  - (4:15) Cache miss penalty on initial request (a cache miss)
+  - (4:40) Stale data - if data is only updated when there is a cache miss, the data can become stale. A Time To Live (TTL) can be used to prevent data from getting too stale.
+
+## DynamoDB Transactions
+
+- __What are ACID transactions?__
+  - Atomic - (0:45) transaction is treated as a single unit, and cannot be partially completed
+  - Consistent - (0:55) transaction must leave the database in a valid state
+  - Isolated - (1:15) no dependency between different transactions. Whether transactions are completed in parallel, or sequentially, ends up in same result
+  - Durable - (1:25) when a transaction is committed, it remains committed, even after a system failure or power loss. The transaction is written to disk (instead of being held in memory)
