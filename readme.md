@@ -402,3 +402,9 @@ Some additional knowledge that was not in the above 19-hour DynamoDB course.
   - Consistent - (0:55) transaction must leave the database in a valid state
   - Isolated - (1:15) no dependency between different transactions. Whether transactions are completed in parallel, or sequentially, ends up in same result
   - Durable - (1:25) when a transaction is committed, it remains committed, even after a system failure or power loss. The transaction is written to disk (instead of being held in memory)
+
+# Alternatives
+
+- [DynamoDB vs MongoDB vs DocumentDB](https://stackoverflow.com/questions/54662236/difference-between-aws-dynamodb-vs-aws-documentdbnewly-launched-service) - the StackOverflow answer also links to [this article](https://medium.com/@caseygibson_42696/difference-between-aws-dynamodb-vs-aws-documentdb-vs-mongodb-9cb026a94767)
+  - MongoDB has the most flexibility, at the cost of increased maintenance/complexity.
+  - DocumentDB is Amazon's middle-ground between DynamoDB and MongoDB.
