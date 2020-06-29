@@ -365,9 +365,9 @@ The above table can be split up into 3 tables:
 - __What is HIVE?__ - (2:10) Data warehousing and analytics layer built onto Hadoop (and thus EMR). Lets you use  relational style operations and can operate on external data sets, (DynamoDB, s3, etc.). HIVE is the SQL interface built into Hadoop/EMR.
 
 
-# Notes From [AWS Certified Developer - Associate 2020](https://learn.acloud.guru/course/aws-certified-developer-associate/dashboard)
+# Notes From [AWS Certified Developer - Associate 2020](https://acloud.guru/learn/aws-certified-developer-associate)
 
-Some additional knowledge that was not in the above 19-hour DynamoDB course.
+Additional knowledge not mentioned in above 19-hour DynamoDB course.
 
 ## DynamoDB On-Demand Capacity
 
@@ -402,6 +402,16 @@ Some additional knowledge that was not in the above 19-hour DynamoDB course.
   - Consistent - (0:55) transaction must leave the database in a valid state
   - Isolated - (1:15) no dependency between different transactions. Whether transactions are completed in parallel, or sequentially, ends up in same result
   - Durable - (1:25) when a transaction is committed, it remains committed, even after a system failure or power loss. The transaction is written to disk (instead of being held in memory)
+
+# Notes From [AWS Certified Solutions Architect - Associate 2020](https://acloud.guru/learn/aws-certified-solutions-architect-associate)
+
+Additional knowledge not mentioned in above courses.
+
+## Advanced DynamoDB
+
+- __What is DynamoDB "Point in Time Recovery?"__ (5:04) A feature that's not enabled by default. It lets you restore your data to any point in last 35 days.
+- __What are DynamoDB "global tables"?__ (7:14) Lets you replicate a DynamoDB table across AWS regions. Helps with _disaster recovery_ and _high availability_. For new items, replication latency is under 1 second. [Updates performed in any region are propagated to other regions, and the data in all regions are eventually consistent](https://aws.amazon.com/dynamodb/global-tables).
+
 
 # Alternatives
 
