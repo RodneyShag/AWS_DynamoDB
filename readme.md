@@ -382,7 +382,7 @@ Additional knowledge not mentioned in above 19-hour DynamoDB course.
 
 - __What is DynamoDB Accelerator (or DAX)?__ (0:10) It's an in-memory cache for DynamoDB. Delivers up to a 10x _read_ performance improvement.
 - __How does DAX work?__ - (1:35) DAX is a write-through caching service, meaning data is written to the cache as well as the back end store at the same time. DynamoDB API calls are pointed to the DAX cluster.
-- __Is DAX good for DynamoDB tables that are write-heavy?__ (3:18) No. DAX does not help with _write_ operations. DAX only helps with "eventually consistent" _read_ operations. [A "write-around" version of DAX can be used so that writes do not become slower]((https://aws.amazon.com/blogs/database/amazon-dynamodb-accelerator-dax-a-read-throughwrite-through-cache-for-dynamodb) (Amazing article - read it all)
+- __Is DAX good for DynamoDB tables that are write-heavy?__ (3:18) No. DAX does not help with _write_ operations. DAX only helps with "eventually consistent" _read_ operations. [A "write-around" version of DAX can be used so that writes do not become slower](https://aws.amazon.com/blogs/database/amazon-dynamodb-accelerator-dax-a-read-throughwrite-through-cache-for-dynamodb) (Amazing article - read it all)
 - __What's an alternative to DAX?__ (Next video) Elasticache.
 
 ## Elasticache
